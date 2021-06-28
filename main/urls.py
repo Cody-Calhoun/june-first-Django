@@ -4,8 +4,8 @@ from . import views
 urlpatterns = [
     path('', views.index),
     path('another_one/<str:name>', views.another),
-    path('hello', views.hello),
+    path('unicorn', views.hello),
     path('redirected', views.redirected),
     path('complete_redirect', views.complete),
-    path('<urls>', views.catch_all)
+    path('<path:resource>', views.catch_all)
 ]

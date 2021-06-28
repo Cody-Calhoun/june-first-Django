@@ -5,11 +5,29 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
     <title>Django Example</title>
 </head>
 
 <body>
-    <h1>Hello from a HTML File!</h1>
+    <div class="container">
+        <form action="">
+            <h1 class="mb-4">Please fill out this form!</h1>
+            <div class="row mb-4">
+                <label for="" class="form-label col-sm-2">Name:</label>
+                <input type="text" class="form-control col-sm-4" placeholder="First and Last name">
+            </div>
+            <div class="row mb-4">
+                <label for="" class="form-label col-sm-2">Email:</label>
+                <input type="text" class="form-control col-sm-4">
+            </div>
+            <div class="row mb-4">
+                <label for="" class="form-label col-sm-2">Password:</label>
+                <input type="text" class="form-control col-sm-4">
+            </div>
+            <button class="btn btn-primary col-sm-2 align-self-center">Submit Form!</button>
+        </form>
+    </div>
 </body>
 
 </html>

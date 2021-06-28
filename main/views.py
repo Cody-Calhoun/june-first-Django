@@ -14,12 +14,12 @@ def hello(request):
 
 
 def redirected(request):
-    return redirect('/hello')
+    return redirect('/unicorn')
 
 
 def complete(request):
     return render(request, "redirect.html")
 
 
-def catch_all(request, urls):
+def catch_all(request, resource):
     return render(request, 'catch.html')
